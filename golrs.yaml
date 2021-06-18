@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Replicaset
+metadata:
+  name: golrs
+spec: 
+#  minReadySeconds: 5
+  replicas: 2
+  template: 
+    metadata: 
+      labels:
+        app: golu
+        version: "160621"
+    spec:     
+    containers:
+      - image: qualitythought/gameoflife:07112020
+
+        name: golu
+        ports:
+          - containerPort: 8080

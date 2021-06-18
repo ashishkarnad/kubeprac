@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: pox-example
+spec: 
+  containers: 
+  - name: nginxpern
+    image: ashishkarnadlinux/samplenode
+    ports: 
+    - containerPort: 8080
+      name: sampport
+      protocol: TCP
+      
+
