@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: golu
+spec:
+  containers: 
+  - image: qualitythought/gameoflife:07112020
+    name: golu
+    ports:
+      - containerPort: 8080
+        name: goluhttp
+        protocol: TCP
+       
+
