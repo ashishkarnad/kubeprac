@@ -10,3 +10,5 @@ spec:
       name: jenkinscont
       ports:
         - containerPort: 8080
+          name: jenkinsport
+          protocol: TCP
