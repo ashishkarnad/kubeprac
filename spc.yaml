@@ -4,7 +4,11 @@ kind: Pod
 metadata: 
   name: spc
   namespace: dev
+  labels: 
+    environment: dev
+    app: spc
 spec:
+
   containers:
     - image: springcommunity/spring-petclinic-visits-service
       name: spc
