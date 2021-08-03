@@ -8,13 +8,13 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-    app: gol
+      app: gol
     #env: dev
   template: 
     metadata: 
       labels:
         app: gol
-        version: "160621"
+        #version: "160621"
         #env: dev
     spec:     
       containers:
