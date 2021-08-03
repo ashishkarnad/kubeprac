@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: jk-service
 spec:
+  type: NodePort
   selector:
     app: jk
   ports:
