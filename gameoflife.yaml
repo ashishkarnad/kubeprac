@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: gol
+spec:
+  containers:
+    - image: ashishkarnadlinux/simple-nginx:latest
+      name: golqt
+      ports: 
+        - containerPort: 8080
+          name: golqthttp
+          protocol: TCP
+      command: ["printenv"]
+      args: ["HOSTNAME", "KUBERNETES_PORT"]
+           

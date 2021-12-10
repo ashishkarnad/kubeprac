@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: spc
+  namespace: dev
+  labels: 
+    environment: dev
+    app: spc
+spec:
+
+  containers:
+    - image: springcommunity/spring-petclinic-visits-service
+      name: spc
+      ports:
+        - containerPort: 8080
+          name: spcport
+          protocol: TCP
