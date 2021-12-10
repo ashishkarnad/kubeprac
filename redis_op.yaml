@@ -1,0 +1,251 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"redis","namespace":"default"},"spec":{"containers":[{"command":["redis-server","/redis-master/redis.conf"],"env":[{"name":"MASTER","value":"true"}],"image":"redis:5.0.4","name":"redis","ports":[{"containerPort":6379}],"resources":{"limits":{"cpu":"0.1"}},"volumeMounts":[{"mountPath":"/redis-master-data","name":"data"},{"mountPath":"/redis-master","name":"config"}]}],"volumes":[{"emptyDir":{},"name":"data"},{"configMap":{"items":[{"key":"redis-config","path":"redis.conf"}],"name":"example-redis-config"},"name":"config"}]}}
+    creationTimestamp: "2021-07-24T17:14:39Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          f:containers:
+            k:{"name":"redis"}:
+              .: {}
+              f:command: {}
+              f:env:
+                .: {}
+                k:{"name":"MASTER"}:
+                  .: {}
+                  f:name: {}
+                  f:value: {}
+              f:image: {}
+              f:imagePullPolicy: {}
+              f:name: {}
+              f:ports:
+                .: {}
+                k:{"containerPort":6379,"protocol":"TCP"}:
+                  .: {}
+                  f:containerPort: {}
+                  f:protocol: {}
+              f:resources:
+                .: {}
+                f:limits:
+                  .: {}
+                  f:cpu: {}
+                f:requests:
+                  .: {}
+                  f:cpu: {}
+              f:terminationMessagePath: {}
+              f:terminationMessagePolicy: {}
+              f:volumeMounts:
+                .: {}
+                k:{"mountPath":"/redis-master"}:
+                  .: {}
+                  f:mountPath: {}
+                  f:name: {}
+                k:{"mountPath":"/redis-master-data"}:
+                  .: {}
+                  f:mountPath: {}
+                  f:name: {}
+          f:dnsPolicy: {}
+          f:enableServiceLinks: {}
+          f:restartPolicy: {}
+          f:schedulerName: {}
+          f:securityContext: {}
+          f:terminationGracePeriodSeconds: {}
+          f:volumes:
+            .: {}
+            k:{"name":"config"}:
+              .: {}
+              f:configMap:
+                .: {}
+                f:defaultMode: {}
+                f:items: {}
+                f:name: {}
+              f:name: {}
+            k:{"name":"data"}:
+              .: {}
+              f:emptyDir: {}
+              f:name: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+      time: "2021-07-24T17:14:39Z"
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:conditions:
+            k:{"type":"ContainersReady"}:
+              .: {}
+              f:lastProbeTime: {}
+              f:lastTransitionTime: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"Initialized"}:
+              .: {}
+              f:lastProbeTime: {}
+              f:lastTransitionTime: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"Ready"}:
+              .: {}
+              f:lastProbeTime: {}
+              f:lastTransitionTime: {}
+              f:status: {}
+              f:type: {}
+          f:containerStatuses: {}
+          f:hostIP: {}
+          f:phase: {}
+          f:podIP: {}
+          f:podIPs:
+            .: {}
+            k:{"ip":"10.244.1.71"}:
+              .: {}
+              f:ip: {}
+          f:startTime: {}
+      manager: kubelet
+      operation: Update
+      time: "2021-07-24T17:14:44Z"
+    name: redis
+    namespace: default
+    resourceVersion: "661113"
+    uid: 314d2364-e132-4d37-aaf0-1b6b9db20898
+  spec:
+    containers:
+    - command:
+      - redis-server
+      - /redis-master/redis.conf
+      env:
+      - name: MASTER
+        value: "true"
+      image: redis:5.0.4
+      imagePullPolicy: IfNotPresent
+      name: redis
+      ports:
+      - containerPort: 6379
+        protocol: TCP
+      resources:
+        limits:
+          cpu: 100m
+        requests:
+          cpu: 100m
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /redis-master-data
+        name: data
+      - mountPath: /redis-master
+        name: config
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: default-token-spvbg
+        readOnly: true
+    dnsPolicy: ClusterFirst
+    enableServiceLinks: true
+    nodeName: kubenode.localdomain
+    preemptionPolicy: PreemptLowerPriority
+    priority: 0
+    restartPolicy: Always
+    schedulerName: default-scheduler
+    securityContext: {}
+    serviceAccount: default
+    serviceAccountName: default
+    terminationGracePeriodSeconds: 30
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+    volumes:
+    - emptyDir: {}
+      name: data
+    - configMap:
+        defaultMode: 420
+        items:
+        - key: redis-config
+          path: redis.conf
+        name: example-redis-config
+      name: config
+    - name: default-token-spvbg
+      secret:
+        defaultMode: 420
+        secretName: default-token-spvbg
+  status:
+    conditions:
+    - lastProbeTime: null
+      lastTransitionTime: "2021-07-24T17:14:39Z"
+      status: "True"
+      type: Initialized
+    - lastProbeTime: null
+      lastTransitionTime: "2021-07-24T17:14:44Z"
+      status: "True"
+      type: Ready
+    - lastProbeTime: null
+      lastTransitionTime: "2021-07-24T17:14:44Z"
+      status: "True"
+      type: ContainersReady
+    - lastProbeTime: null
+      lastTransitionTime: "2021-07-24T17:14:39Z"
+      status: "True"
+      type: PodScheduled
+    containerStatuses:
+    - containerID: docker://cacad709cd7ad2c7573d1b927b8d23de9cc511412dd2a3847bf72c9ec8ad9d47
+      image: redis:5.0.4
+      imageID: docker-pullable://redis@sha256:2dfa6432744659268d001d16c39f7be52ee73ef7e1001ff80643f0f7bdee117e
+      lastState: {}
+      name: redis
+      ready: true
+      restartCount: 0
+      started: true
+      state:
+        running:
+          startedAt: "2021-07-24T17:14:43Z"
+    hostIP: 172.31.18.115
+    phase: Running
+    podIP: 10.244.1.71
+    podIPs:
+    - ip: 10.244.1.71
+    qosClass: Burstable
+    startTime: "2021-07-24T17:14:39Z"
+- apiVersion: v1
+  data:
+    redis-config: ""
+  kind: ConfigMap
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","data":{"redis-config":""},"kind":"ConfigMap","metadata":{"annotations":{},"name":"example-redis-config","namespace":"default"}}
+    creationTimestamp: "2021-07-24T17:12:30Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data:
+          .: {}
+          f:redis-config: {}
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+      time: "2021-07-24T17:12:30Z"
+    name: example-redis-config
+    namespace: default
+    resourceVersion: "660924"
+    uid: e1e88066-e415-4173-9100-85ccab2ffaa3
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""

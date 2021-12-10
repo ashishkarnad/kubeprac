@@ -1,0 +1,252 @@
+    1  docker ps
+    2  sudo apt list --installted
+    3  sudo apt list --installed
+    4  sudo apt list --installed | grep docker
+    5  vim dockerinstall.sh
+    6  chmod +x dockerinstall.sh 
+    7  ./dockerinstall.sh 
+    8  docker ps
+    9  sudo chown ubuntu:docker /var/run/docker.sock
+   10  exit
+   11  docker ps
+   12  sudo mkdir -p /data/www
+   13  cd /data/www/
+   14  pw
+   15  pwd
+   16  vim index.html
+   17  sudo vim index.html
+   18  sudo docker run --name nginx  -v /data/wwww/:/usr/share/nginx/html:ro -d -p 8081:80 nginx
+   19  docker image ls
+   20  docker container ls
+   21  docker ps
+   22  htop
+   23  top
+   24  docker stats
+   25  docker ps
+   26  id ubuntu
+   27  sudo usermod -aG docker ubuntu
+   28  id ubuntu
+   29  ls -la
+   30  cd 
+   31  sudo chown -R ubuntu:ubuntu /data
+   32  l s-la
+   33  ls -la
+   34  cd /data
+   35  ls -la
+   36  cd www
+   37  l s-la
+   38  ls -la
+   39  cd ..
+   40  l s-la
+   41  ls -la
+   42  cd wwww
+   43  ls -la
+   44  cd ..
+   45  sudo rm -fr wwww
+   46  ls -la
+   47  sudo systemctl status docker
+   48  docker container ls
+   49  docker exec -it d198c0b46e2b /bin/bash
+   50  history
+   51  sudo docker run -d --name ngxin -v /data/www:/usr/share/nginx/html:ro -p 8081:80 nginx
+   52  docker ps
+   53  docker container stop d198c0b46e2b
+   54  docker container rm d198c0b46e2b
+   55  sudo docker run -d --name ngxin -v /data/www:/usr/share/nginx/html:ro -p 8081:80 nginx
+   56  docker ps
+   57  sudo docker run -d --name ngingx --v /data/www:/usr/share/nginx/html:ro -p 8081:80 nginx1
+   58  sudo docker run -d --name nginx -v /data/www:/usr/share/nginx/html:ro -p 8081:80 nginx1
+   59  sudo docker run -d --name nginx -v /data/www:/usr/share/nginx/html:ro -p 8081:80 nginx
+   60  docker container ls
+   61  docker ps
+   62  sudo vim /etc/hosts
+   63  docker ps
+   64  df -kh
+   65  mkdir dk
+   66  cd dk
+   67  vim Dockerfile
+   68  ifconfig -a
+   69  sudo cat /sys/class/dmi/id/product_uuid 
+   70  lsmod | grep br_netfilter
+   71  cat /var/run/docker.sock
+   72  suod su
+   73  sudo su
+   74  sudo apt-get update && sudo apt-get install -y apt-transport-https curl
+   75  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+   76  cat <<EOF | sudo tee /etc/apt/sources.list.d/kubernetes.list
+   77  deb https://apt.kubernetes.io/ kubernetes-xenial main
+   78  EOF
+   79  sudo apt-get -y update
+   80  sudo apt-get install -y kubelet kubeadm kubectl
+   81  sudo apt-mark hold kubelet kubeadm kubectl
+   82  cat /var/lib/kubelet/config.yaml
+   83  cd /var/lib/
+   84  ls
+   85  cd
+   86  kubeadm init
+   87  sudo kubeadm init
+   88  histoyr
+   89  history
+   90  sudo kubeadm init
+   91  vim ~/.bashrc
+   92  source ~/.bashrc
+   93  sudo vim /etc/hostname 
+   94  source /etc/hostname
+   95  ifconfig
+   96  mkdir -p $HOME/.kube
+   97  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+   98  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+   99  cd .kube/
+  100  ls -la
+  101  cat config 
+  102  kubectl get pods -o wide --all-namespaces
+  103  sudo kubectl get pods -o wide --all-namespaces
+  104  cd /etc/kubernetes/
+  105  ls -la
+  106  sudo chown -R ubuntu:ubuntu *
+  107  ls -la
+  108  cd manifests/
+  109  ls -la
+  110  cd ..
+  111  cd pki
+  112  ls -la
+  113  cd
+  114  kubectl get pods -o wide --all-namespaces
+  115  kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.7/calico.yaml 
+  116  sudo kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.7/calico.yaml 
+  117  sudo kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.22/calico.yaml 
+  118  kubectl proxy
+  119  curl -Lo kops https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64
+  120  ls
+  121  chmod +x ./kops 
+  122  ls -la
+  123  sudo vm ./kops /usr/local/bin/
+  124  sudo mv ./kops /usr/local/bin/
+  125  whereis kubectl
+  126  pip install awscli
+  127  sudo apt install -y python-pip
+  128  pip install awslic
+  129  pip install awscli
+  130  vim ~/.bash_history 
+  131  history
+  132  ls -la
+  133  cat dockerinstall.sh 
+  134  history
+  135  aws configure
+  136  pip install awscli
+  137  aws configure
+  138  pip install awscli
+  139  aws configure
+  140  sudo apt install awscli
+  141  aws configure
+  142  aws iam list-users
+  143  ls -la
+  144  cd .aws
+  145  ls
+  146  vim config 
+  147  vim credentials 
+  148  vim ~/.bashrc
+  149  source ~/.bashrc
+  150  vim ~/.bashrc
+  151  source ~/.bashrc
+  152  sudo kubeadmin init
+  153  sudo kubeadm init
+  154  cd
+  155  sudo kubeadm join 172.31.46.148:6443 --token 3c4wo1.szlzbgjwqhsvz9tk     --discovery-token-ca-cert-hash sha256:72c1250950081acb8e40c3be10dc9768f32f87f8154d97c0903663637940c634
+  156  sudo fuser -k 10250/tcp
+  157  cd /etc
+  158  ls
+  159  cd kubernetes/
+  160  ls -la
+  161  sudo rm manifests/
+  162  sudo rm -fr manifests/
+  163  sudo rm -fr pki
+  164  sudo rm kubelet.conf 
+  165  cd
+  166  sudo kubeadm join 172.31.46.148:6443 --token 3c4wo1.szlzbgjwqhsvz9tk     --discovery-token-ca-cert-hash sha256:72c1250950081acb8e40c3be10dc9768f32f87f8154d97c0903663637940c634
+  167  sudo fuser -k tcp/10250
+  168  sudo fuser -k 10250/tcp
+  169  sudo kubeadm join 172.31.46.148:6443 --token 3c4wo1.szlzbgjwqhsvz9tk     --discovery-token-ca-cert-hash sha256:72c1250950081acb8e40c3be10dc9768f32f87f8154d97c0903663637940c634
+  170  sudo kubeadm init
+  171  sudo /var/lib/etcd/
+  172  ls -la
+  173  sudo su
+  174  sudo kubeadm init
+  175  sudo rm -fr /etc/kubernetes/admin.conf 
+  176  sudo kubeadm init
+  177  sudo rm -fr /etc/kubernetes/controller-manager.conf 
+  178  sudo kubeadm init
+  179  sudo fuser -k 10250/tcp
+  180  sudo kubeadm init
+  181  sudo rm -fr /etc/kubernetes/scheduler.conf 
+  182  sudo fuser -k 10250/tcp
+  183  sudo kubeadm init
+  184  sudo fuser -k 10250/tcp
+  185  sudo kubeadm init
+  186  sudo rm -fr /etc/kubernetes/*
+  187  sudo fuser -k 10250/tcp
+  188  sudo kubeadm init
+  189  sudo fuser -k 10250/tcp
+  190  sudo fuser -k 10259/tcp
+  191  sudo fuser -k 10257/tcp
+  192  sudo fuser -k 2379/tcp
+  193  sudo fuser -k 2380/tcp
+  194  sudo fuser -k 10250/tcp
+  195  sudo kubeadm init
+  196  cd /var/lib/et
+  197  cd /var/lib/etcd/
+  198  sudo su
+  199  sudo kubeadm init
+  200  sudo fuser -k 6443/tcp
+  201  sudo fuser -k 10250/tcp
+  202  sudo kubeadm init
+  203  sudo vim /etc/hostname 
+  204  sudo vim /etc/hosts
+  205  sudo kubeadm reset
+  206  vim .kube/config 
+  207  cd /var/lib/
+  208  ls -la
+  209  cd containerd/
+  210  ls -la
+  211  sudo su
+  212  sudo systemctl restart kubelet
+  213  sudo kubeadm init
+  214  history
+  215  sudo su
+  216  kubeadm token list
+  217  sudo chown ubuntu:ubuntu /etc/kubernetes/admin.conf 
+  218  kubeadm token list
+  219  cd
+  220  sudo kubeadm reset
+  221  sudo systemctl daemon-reload
+  222  sudo fuser -k 10250/tcp
+  223  sudo kubeadm reset
+  224  sudo kubeadm init
+  225  kubectl get nodes
+  226  sudo chown ubuntu:ubuntu /etc/kubernetes/admin.conf 
+  227  kubectl get nodes
+  228  kubect get pods -n kube-system
+  229  kubectl get pods -n kube-system
+  230  kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+  231  kubectl get pods -n kube-system
+  232  kubectl get nodes
+  233  kubectl describe nodes
+  234  kubectl get nodes
+  235  nohup kubectl proxy &&
+  236  ps -aef | grep kubectl
+  237  kubectl proxy
+  238  fuser -k 8001/tcp
+  239  kubectl proxy
+  240  kubectl create serviceaccount dashboard -n default
+  241  kubectl create clusterrolebinding dashboard-admin -n default 
+  242  kubectl create clusterrolebinding dashboard-admin -n default --clusterrole=cluster-admin --serviceaccount=default:dashboard
+  243  kubectl get pods -o wide –all-namespaces
+  244  kubectl get pods
+  245  kubectl get nodes
+  246  kubectl get pods -l app=nginx
+  247  kubectl get nodes
+  248  kubectl describe nodes
+  249  kubectl stats
+  250  kubectl --help
+  251  history
+  252  history > kubeinstallsteps.txt

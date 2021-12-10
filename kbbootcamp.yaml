@@ -1,0 +1,191 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2021-08-14T08:05:43Z"
+  generateName: kubernetes-bootcamp-769746fd4-
+  labels:
+    app: kubernetes-bootcamp
+    pod-template-hash: 769746fd4
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:generateName: {}
+        f:labels:
+          .: {}
+          f:app: {}
+          f:pod-template-hash: {}
+        f:ownerReferences:
+          .: {}
+          k:{"uid":"ca336881-6670-484e-b9a0-a3075dd010b3"}:
+            .: {}
+            f:apiVersion: {}
+            f:blockOwnerDeletion: {}
+            f:controller: {}
+            f:kind: {}
+            f:name: {}
+            f:uid: {}
+      f:spec:
+        f:containers:
+          k:{"name":"kubernetes-bootcamp"}:
+            .: {}
+            f:image: {}
+            f:imagePullPolicy: {}
+            f:name: {}
+            f:resources: {}
+            f:terminationMessagePath: {}
+            f:terminationMessagePolicy: {}
+        f:dnsPolicy: {}
+        f:enableServiceLinks: {}
+        f:restartPolicy: {}
+        f:schedulerName: {}
+        f:securityContext: {}
+        f:terminationGracePeriodSeconds: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2021-08-14T08:05:43Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          .: {}
+          k:{"type":"PodScheduled"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2021-08-14T08:05:44Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"ContainersReady"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Initialized"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Ready"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+        f:containerStatuses: {}
+        f:hostIP: {}
+        f:phase: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"10.244.1.68"}:
+            .: {}
+            f:ip: {}
+        f:startTime: {}
+    manager: kubelet
+    operation: Update
+    time: "2021-08-16T11:57:00Z"
+  name: kubernetes-bootcamp-769746fd4-2gscr
+  namespace: default
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: kubernetes-bootcamp-769746fd4
+    uid: ca336881-6670-484e-b9a0-a3075dd010b3
+  resourceVersion: "1030158"
+  uid: d38e0118-b6f6-43c2-a2e7-db94559123c1
+spec:
+  containers:
+  - image: jocatalin/kubernetes-bootcamp:v2
+    imagePullPolicy: IfNotPresent
+    name: kubernetes-bootcamp
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-spvbg
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: kubenode.localdomain
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: default-token-spvbg
+    secret:
+      defaultMode: 420
+      secretName: default-token-spvbg
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2021-08-15T02:34:28Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2021-08-16T11:57:00Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2021-08-16T11:57:00Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2021-08-15T02:34:28Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://63376ae3ed130e19b6b5886504961979aae71661edb828b35d8c358810983cfb
+    image: jocatalin/kubernetes-bootcamp:v2
+    imageID: docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
+    lastState:
+      terminated:
+        containerID: docker://203649d63e9e7165232aaabd57e378e67355549898c1a628f6297cf3e5bf12cb
+        exitCode: 137
+        finishedAt: "2021-08-15T03:49:52Z"
+        reason: Error
+        startedAt: "2021-08-15T02:34:47Z"
+    name: kubernetes-bootcamp
+    ready: true
+    restartCount: 1
+    started: true
+    state:
+      running:
+        startedAt: "2021-08-16T11:56:59Z"
+  hostIP: 172.31.18.115
+  phase: Running
+  podIP: 10.244.1.68
+  podIPs:
+  - ip: 10.244.1.68
+  qosClass: BestEffort
+  startTime: "2021-08-15T02:34:28Z"
