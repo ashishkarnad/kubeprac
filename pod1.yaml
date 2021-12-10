@@ -1,6 +1,6 @@
 ---
-apiVersion: apps/v1
-kind : pod
+apiVersion: v1
+kind : Pod
 metadata:
   name: rss-site
   labels: 
@@ -9,8 +9,10 @@ spec:
   containers: 
     - name: frontend
       image: nginx
-      containerPort: 80
+      ports:  
+      - containerPort: 80
     - name: rss-reader
       image: nickchase/rss-php-nginx:v1
-      containerPort: 88
+      ports:   
+      - containerPort: 88
 
