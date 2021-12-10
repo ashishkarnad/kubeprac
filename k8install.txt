@@ -1,0 +1,26 @@
+ 1992  sudo kubeadm reset
+ 1993  sudo rm -fr /etc/kubernetes
+ 1994  sudo apt-get install -q kubectl=1.19.4-00 kubeadm=1.19.4-00 kubectl=1.19.4-00 kubernetes-cni=1.19.4-00
+ 1995  sudo apt-get install -q kubectl=1.19.4-00 kubeadm=1.19.4-00 kubectl=1.19.4-00
+ 1996  kubelet version
+ 1997  kubeadm version
+ 1998  sudo vim /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+ 1999  ip r l
+ 2000  sudo kubeadm init --apiserver-advertise-address=172.31.46.148 --pod-network=192.168.0.0/16
+ 2001  sudo kubeadm init --apiserver-advertise-address=172.31.46.148 --pod-network-cidr=192.168.0.0/16 --v=5
+ 2002  sudo chown -R ubuntu:ubuntu /etc/kubernetes
+ 2003  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+ 2004  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+ 2005  cd .kube/
+ 2006  ls -la
+ 2007  kubectl get pods -o wide --all-namespaces
+ 2008  kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.7/calico.yaml
+ 2009  sudo kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.7/calico.yaml
+ 2010  cd
+ 2011  sudo kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.7/calico.yaml
+ 2012  kubectl get pods -o wide --all-namespaces
+ 2013  sudo kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.9/calico.yaml
+ 2014  kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+ 2015  kubectl get pods -o wide --all-namespaces
+ 2016  kubectl get pods
+ 2017  kubectl get pods --all-namespaces

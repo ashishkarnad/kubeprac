@@ -1,0 +1,226 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    creationTimestamp: "2021-08-05T12:13:19Z"
+    generateName: daemon-demo-
+    labels:
+      app: alpine
+      controller-revision-hash: 7c79d4fbdc
+      pod-template-generation: "1"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:generateName: {}
+          f:labels:
+            .: {}
+            f:app: {}
+            f:controller-revision-hash: {}
+            f:pod-template-generation: {}
+          f:ownerReferences:
+            .: {}
+            k:{"uid":"5da0257b-0350-46c0-b03b-13ce2b61a0c9"}:
+              .: {}
+              f:apiVersion: {}
+              f:blockOwnerDeletion: {}
+              f:controller: {}
+              f:kind: {}
+              f:name: {}
+              f:uid: {}
+        f:spec:
+          f:affinity:
+            .: {}
+            f:nodeAffinity:
+              .: {}
+              f:requiredDuringSchedulingIgnoredDuringExecution:
+                .: {}
+                f:nodeSelectorTerms: {}
+          f:containers:
+            k:{"name":"alpine"}:
+              .: {}
+              f:args: {}
+              f:image: {}
+              f:imagePullPolicy: {}
+              f:name: {}
+              f:resources: {}
+              f:terminationMessagePath: {}
+              f:terminationMessagePolicy: {}
+          f:dnsPolicy: {}
+          f:enableServiceLinks: {}
+          f:restartPolicy: {}
+          f:schedulerName: {}
+          f:securityContext: {}
+          f:terminationGracePeriodSeconds: {}
+          f:tolerations: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2021-08-05T12:13:19Z"
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:conditions:
+            k:{"type":"ContainersReady"}:
+              .: {}
+              f:lastProbeTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"Initialized"}:
+              .: {}
+              f:lastProbeTime: {}
+              f:lastTransitionTime: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"Ready"}:
+              .: {}
+              f:lastProbeTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+          f:containerStatuses: {}
+          f:hostIP: {}
+          f:phase: {}
+          f:podIP: {}
+          f:podIPs:
+            .: {}
+            k:{"ip":"10.244.1.72"}:
+              .: {}
+              f:ip: {}
+          f:startTime: {}
+      manager: kubelet
+      operation: Update
+      time: "2021-08-16T13:32:57Z"
+    name: daemon-demo-rtcd2
+    namespace: jenkins
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: DaemonSet
+      name: daemon-demo
+      uid: 5da0257b-0350-46c0-b03b-13ce2b61a0c9
+    resourceVersion: "1041249"
+    uid: ba318fff-3936-4a2a-874d-f18d9886f613
+  spec:
+    affinity:
+      nodeAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+          nodeSelectorTerms:
+          - matchFields:
+            - key: metadata.name
+              operator: In
+              values:
+              - kubenode.localdomain
+    containers:
+    - args:
+      - /bin/bash
+      - -c
+      - sleep 1d
+      image: alpine
+      imagePullPolicy: Always
+      name: alpine
+      resources: {}
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: default-token-qjgkn
+        readOnly: true
+    dnsPolicy: ClusterFirst
+    enableServiceLinks: true
+    nodeName: kubenode.localdomain
+    preemptionPolicy: PreemptLowerPriority
+    priority: 0
+    restartPolicy: Always
+    schedulerName: default-scheduler
+    securityContext: {}
+    serviceAccount: default
+    serviceAccountName: default
+    terminationGracePeriodSeconds: 30
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+    - effect: NoSchedule
+      key: node.kubernetes.io/disk-pressure
+      operator: Exists
+    - effect: NoSchedule
+      key: node.kubernetes.io/memory-pressure
+      operator: Exists
+    - effect: NoSchedule
+      key: node.kubernetes.io/pid-pressure
+      operator: Exists
+    - effect: NoSchedule
+      key: node.kubernetes.io/unschedulable
+      operator: Exists
+    volumes:
+    - name: default-token-qjgkn
+      secret:
+        defaultMode: 420
+        secretName: default-token-qjgkn
+  status:
+    conditions:
+    - lastProbeTime: null
+      lastTransitionTime: "2021-08-05T12:13:19Z"
+      status: "True"
+      type: Initialized
+    - lastProbeTime: null
+      lastTransitionTime: "2021-08-05T12:13:19Z"
+      message: 'containers with unready status: [alpine]'
+      reason: ContainersNotReady
+      status: "False"
+      type: Ready
+    - lastProbeTime: null
+      lastTransitionTime: "2021-08-05T12:13:19Z"
+      message: 'containers with unready status: [alpine]'
+      reason: ContainersNotReady
+      status: "False"
+      type: ContainersReady
+    - lastProbeTime: null
+      lastTransitionTime: "2021-08-05T12:13:19Z"
+      status: "True"
+      type: PodScheduled
+    containerStatuses:
+    - containerID: docker://9dd05033fbc93615dc2d8b8de056e30227cbad59f0364c9fa627da61fd1c67c8
+      image: alpine:latest
+      imageID: docker-pullable://alpine@sha256:eb3e4e175ba6d212ba1d6e04fc0782916c08e1c9d7b45892e9796141b1d379ae
+      lastState:
+        terminated:
+          containerID: docker://9dd05033fbc93615dc2d8b8de056e30227cbad59f0364c9fa627da61fd1c67c8
+          exitCode: 127
+          finishedAt: "2021-08-16T14:04:11Z"
+          message: 'OCI runtime create failed: container_linux.go:367: starting container
+            process caused: exec: "/bin/bash": stat /bin/bash: no such file or directory:
+            unknown'
+          reason: ContainerCannotRun
+          startedAt: "2021-08-16T14:04:11Z"
+      name: alpine
+      ready: false
+      restartCount: 268
+      started: false
+      state:
+        waiting:
+          message: back-off 5m0s restarting failed container=alpine pod=daemon-demo-rtcd2_jenkins(ba318fff-3936-4a2a-874d-f18d9886f613)
+          reason: CrashLoopBackOff
+    hostIP: 172.31.18.115
+    phase: Running
+    podIP: 10.244.1.72
+    podIPs:
+    - ip: 10.244.1.72
+    qosClass: BestEffort
+    startTime: "2021-08-05T12:13:19Z"
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""

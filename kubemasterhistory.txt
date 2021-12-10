@@ -1,0 +1,1000 @@
+  993  kubectl get rs
+  994  kubectl get pods 
+  995  kubectl get pod my-releae-mysql-0
+  996  kubectl get pod my-releae-mysql-0 -o yaml
+  997  kubectl get pod my-releae-mysql-0 -o yaml > mysql.yaml
+  998  kubectl delete -f mysql.yaml 
+  999  kubectl get pods 
+ 1000  vim mysql.yaml 
+ 1001  kubectl get statefulset
+ 1002  kubectl delete statefulset/my-releae-mysql
+ 1003  kubectl get statefulset
+ 1004  kubectl get pods 
+ 1005  kubectl get statefulset --all-namespaces
+ 1006  kubectl get ns
+ 1007  kubectl config set-context --current --namespace=dev
+ 1008  kubectl delete statefulset my-release-mariadb
+ 1009  kubectl get statefulset
+ 1010  kubectl get statefulset --all-namespaces
+ 1011  kubectl get pods 
+ 1012  kubectl get pods --all-namespace
+ 1013  kubectl get pods --all-namespaces
+ 1014  htop
+ 1015  kubectl get pods --all-namespaces
+ 1016  kubectl config set-context --set-current --namespace=jenkins
+ 1017  kubectl config set-context --current --namespace=jenkins
+ 1018  kubetctl get pods
+ 1019  kubectl get pods
+ 1020  kubectl get pods -o yaml > ddrtcd2.yaml
+ 1021  vim ddrtcd2.yaml 
+ 1022  kubectl get daemonset
+ 1023  kubectl delete daemonset daemon-demo
+ 1024  kubectl get pods
+ 1025  kubectl describe node kubemaster
+ 1026  kubectl describe node kubemaster | grep taint
+ 1027  kubectl describe node kubemaster | grep "*aint"
+ 1028  kubectl describe node kubemaster | grep "Taint"
+ 1029  kubectl describe node 
+ 1030  kubectl get nodes
+ 1031  kubectl describe kubenode | grep Taint
+ 1032  kubectl describe node kubenode | grep Taint
+ 1033  kubectl get nodes
+ 1034  exit
+ 1035  kubeadm token list
+ 1036  ls
+ 1037  ls -tlhr
+ 1038  vim kubeinstallsteps.txt 
+ 1039  docker ps
+ 1040  cd /etc/kubernetes/pki/
+ 1041  ls
+ 1042  ls -tlrh
+ 1043  cd etc
+ 1044  ls
+ 1045  cd etcd
+ 1046  ls
+ 1047  ls -tlhr
+ 1048  cd ..
+ 1049  kubeadm token list
+ 1050  kubeadm -help
+ 1051  kubeadm --help
+ 1052  history | grep kubeadm
+ 1053  kubeadm token create --print-join-command
+ 1054  exit
+ 1055  kubectl get nodes
+ 1056  kubeadm token create --print-join-command
+ 1057  kubectl get nodes
+ 1058  sudo init 0
+ 1059  history
+ 1060  kubeadm token create --print-join-command
+ 1061  kubectl get nodes
+ 1062  docker ps
+ 1063  kubectl get pods
+ 1064  kubectl get ns
+ 1065  kubectl config get-context
+ 1066  kubectl config get-context --help
+ 1067  kubectl config get-contexts --help
+ 1068  kubectl config get-contextsview
+ 1069  kubectl config get-contexts view
+ 1070  kubectl config get-contexts 
+ 1071  kubectl get ns 
+ 1072  kubectl config get-contexts --help
+ 1073  kubectl config set-context ashish
+ 1074  kubectl config set-context --namespace=ashish
+ 1075  kubectl config set-context --curent --namespace=ashish
+ 1076  kubectl config set-context --curent --help
+ 1077  kubectl get pv
+ 1078  curl -LO https://storage.googleapis.com/kubernetes-helm/helm-v2.8.2-linux-amd64.tar.gz
+ 1079  tar -xvzf helm-v2.8.2-linux-amd64.tar.gz 
+ 1080  sudo tar -xvzf helm-v2.8.2-linux-amd64.tar.gz 
+ 1081  ls -tlhr
+ 1082  rm helm-v2.8.2-linux-amd64.tar.gz 
+ 1083  vim ddrtcd2.yaml 
+ 1084  rm helm-v3.6.3-linux-arm64.tar.gz 
+ 1085  curl -LO https://get.helm.sh/helm-v3.5.4-linux-amd64.tar.gz
+ 1086  tar -xvzf helm-v3.5.4-linux-amd64.tar.gz 
+ 1087  l s-tlhr
+ 1088  ls -tlhr
+ 1089  rm -fr linux-arm64/
+ 1090  rm -fr linux-amd64/
+ 1091  ls -thrl
+ 1092  mkdir helm
+ 1093  tar -xvzf helm-v3.5.4-linux-amd64.tar.gz helm/
+ 1094  tar -xvzf helm-v3.5.4-linux-amd64.tar.gz helm
+ 1095  tar -xvzf helm-v3.5.4-linux-amd64.tar.gz -c helm/
+ 1096  tar -xvzf helm-v3.5.4-linux-amd64.tar.gz -C helm/
+ 1097  cd helm
+ 1098  ls -tlhr
+ 1099  mv linux-amd64/helm /usr/local/bin/helm 
+ 1100  cd linux-amd64/
+ 1101  ls
+ 1102  mv helm /usr/local/bin/helm 
+ 1103  sudo mv helm /usr/local/bin/helm 
+ 1104  ls -tlhr
+ 1105  cd /usr/local/bin
+ 1106  ls -tlhr helm*
+ 1107  helm search hub
+ 1108  cd proj
+ 1109  vim nginxdep.yaml 
+ 1110  exit
+ 1111  cd proj
+ 1112  vim ngtempsvc.yaml 
+ 1113  kubectl create -f ngtempsvc.yaml 
+ 1114  vim ngtempsvc.yaml 
+ 1115  kubectl create -f ngtempsvc.yaml 
+ 1116  vim ngtempsvc.yaml 
+ 1117  kubectl create -f ngtempsvc.yaml 
+ 1118  kubectl get svc
+ 1119  kubectl get pods
+ 1120  kubectl delete svc nginxash 
+ 1121  vim ngtempsvc.yaml 
+ 1122  kubectl create -f ngtempsvc.yaml 
+ 1123  kubetl get svc
+ 1124  kubectl get svc
+ 1125  vim ngtempsvc.yaml 
+ 1126  curl -k http://10.110.92.28
+ 1127  kubectl get pods nginx
+ 1128  kubectl get pods
+ 1129  kubectl get pods nginx-deployment-79ffdc5889-5b58w -o yaml | grep -i ip
+ 1130  curl -k http://10.244.1.83
+ 1131  kubectl get pods nginx-deployment-79ffdc5889-5b58w -o yaml | grep -i ip
+ 1132  curl -k http://172.31.18.115
+ 1133  ls
+ 1134  vim ngtempsvc.yaml 
+ 1135  kubectl delete svc nginxash 
+ 1136  kubectl create -f ngtempsvc.yaml 
+ 1137  kubectl get svc
+ 1138  kubectl get pods
+ 1139  kubectl get pods nginx-deployment-79ffdc5889-5b58w -o yaml | grep -i ip
+ 1140  kubectl get pods nginx-deployment-79ffdc5889-5b58w -o yaml | grep -i port
+ 1141  vim ngtempsvc.yaml 
+ 1142  kubectl get svc nginxash -o yaml | grep nodePort -c 5
+ 1143  kubectl get svc nginxash -o yaml 
+ 1144  kubectl get svc nginxash -o yaml | grep nodePort -c 5
+ 1145  kubectl get svc nginxash -o yaml | grep nodePort
+ 1146  kubectl get svc nginxash -o yaml | grep nodePort -C 
+ 1147  kubectl get svc nginxash -o yaml | grep nodePort -C 5
+ 1148  vim ngtempsvc.yaml 
+ 1149  curl http://54.198.131.73:31200 -k
+ 1150  curl http://54.226.57.119:31200 -k
+ 1151  kubectl edit svc nginxash 
+ 1152  kubectl edit svc nginxash --type=LoadBalancer
+ 1153  vim ngtempsvc.yaml 
+ 1154  kubectl dete -f ngtempsvc.yaml 
+ 1155  kubectl delete -f ngtempsvc.yaml 
+ 1156  kubectl create -f ngtempsvc.yaml 
+ 1157  vim ngtempsvc.yaml 
+ 1158  kubectl get svc
+ 1159  vim ngtempsvc.yaml 
+ 1160  kubectl expose deployment nginx-deployment --type=LoadBalancer --name=nginxsvc
+ 1161  kubectl get svc
+ 1162  watch -n5 kubectl get svc
+ 1163  kubectl get svc nginxsvc 
+ 1164  vim ngtempsvc.yaml 
+ 1165  ls
+ 1166  kubectl describe pods nginx-deployment-79ffdc5889-5b58w 
+ 1167  kubectl describe pods nginx-deployment-79ffdc5889-5b58w | grep name
+ 1168  kubectl describe pods nginx-deployment-79ffdc5889-5b58w | grep -i [N|n]anme
+ 1169  kubectl describe pods nginx-deployment-79ffdc5889-5b58w | grep -i [N|n]ame
+ 1170  kubectl describe pods nginx-deployment-79ffdc5889-5b58w | grep  [N|n]ame
+ 1171  kubectl describe pods nginx-deployment-79ffdc5889-5b58w | grep  "[N|n]ame"
+ 1172  kubectl describe pods nginx | grep  "[N|n]ame"
+ 1173  vim ngtempsvc.yaml 
+ 1174  kubectl get svc
+ 1175  kubectl delete nginxsvc
+ 1176  kubectl delete svc nginxsvc
+ 1177  kubectl apply -f ngtempsvc.yaml 
+ 1178  kubectl get svc
+ 1179  kubectl get pods
+ 1180  kubectl get ns
+ 1181  kubectl set-context --current-context --namespace=dev
+ 1182  kubectl set-context --help
+ 1183  kubectl --help
+ 1184  kubectl set-context --help
+ 1185  kubectl --help | grep context
+ 1186  kubectl --help | more
+ 1187  kubectl get pods
+ 1188  kubectl get pods --all-namespace
+ 1189  kubectl get pods --all-namespaces
+ 1190  htop
+ 1191  kubectl run --image=nginx nginx 
+ 1192  ls
+ 1193  cd proj
+ 1194  ls
+ 1195  cat pod1.yaml 
+ 1196  cat nginxdep.yaml 
+ 1197  kubectl get pods > selfnginxpods.yaml
+ 1198  vim selfnginxpods.yaml 
+ 1199  kubectl get pods -o yaml  > selfnginxpods.yaml
+ 1200  vim selfnginxpods.yaml 
+ 1201  ls
+ 1202  cp nginxdep.yaml nginxash.yaml
+ 1203  vim nginxash.yaml 
+ 1204  cat nginxash.yaml 
+ 1205  vim selfnginxpods.yaml 
+ 1206  vim nginxdep.yaml 
+ 1207  kubectl create -f nginxdep.yaml 
+ 1208  vim nginxdep.yaml 
+ 1209  kubectl create -f nginxdep.yaml 
+ 1210  kubectl get pods
+ 1211  kubectl get deployments
+ 1212  kubectl get deployments.apps 
+ 1213  kubectl get deployments.apps | grep -i image
+ 1214  kubectl get deployments.apps nginx-deployment | grep -i image
+ 1215  kubectl get deployments.apps nginx-deployment
+ 1216  vim nginxdep.yaml 
+ 1217  kubectl create -f nginxdep.yaml 
+ 1218  kubectl apply -f nginxdep.yaml 
+ 1219  kubectl get deployments.apps 
+ 1220  kubectl get pods
+ 1221  kubectl scale deployment nginx-deployment --replicas=5
+ 1222  kubectl get pods
+ 1223  vim nginxdep.yaml 
+ 1224  kubectl apply -f nginxdep.yaml 
+ 1225  kubectl get pods
+ 1226  vim nginxdep.yaml 
+ 1227  kubectl get pods
+ 1228  kubectl apply -f nginxdep.yaml 
+ 1229  kubectl get pods
+ 1230  kubectl delete pods nginx
+ 1231  kubectl get pods
+ 1232  kubectl get deployments.apps nginx-deployment 
+ 1233  kubectl get deployments.apps nginx-deployment -o yaml > /home/ubuntu/ngdepyml.yaml
+ 1234  vim ../ngdepyml.yaml 
+ 1235  kubectl get pods 
+ 1236  kubectl get pods -o yaml > /home/ubuntu/ngdeppods.yaml
+ 1237  vim ../ngdeppods.yaml 
+ 1238  vim ../ngdepyml.yaml 
+ 1239  curl -o nginx-deployment-79ffdc5889-5b58w
+ 1240  curl -x nginx-deployment-79ffdc5889-5b58w
+ 1241  kubectl port-forward nginx-deployment-79ffdc5889-5b58w 8080:31200
+ 1242  kubectl port-forward nginx-deployment-79ffdc5889-5b58w 31200:8080
+ 1243  kubectl get pods
+ 1244  kubectl get rs
+ 1245  skubectl get svc
+ 1246  kubectl get svc
+ 1247  kubectl create svc ngtemp -o yaml > ngtempsvc.yaml
+ 1248  kubectl create svc ngtemp 
+ 1249  kubectl create svc --help
+ 1250  kubectl create service ngtemp
+ 1251  vim nginxdep.yaml 
+ 1252  kubectl describe deployments
+ 1253  kubectl describe pods
+ 1254  kubectl get nodes
+ 1255  kubectl get svc 
+ 1256  kubectl describe svc nginxash
+ 1257  kubectl get svc 
+ 1258  kubectl describe svc nginxash
+ 1259  kubectl get svc 
+ 1260  kubectl edit svc nginxash 
+ 1261  ls
+ 1262  cd proj
+ 1263  ls
+ 1264  rm 1
+ 1265  vim ngtempsvc.yaml 
+ 1266  kubectl delete -f ngtempsvc.yaml 
+ 1267  vim ngtempsvc.yaml 
+ 1268  kubectl create-f ngtempsvc.yaml 
+ 1269  kubectl create -f ngtempsvc.yaml 
+ 1270  kubectl describe svc 
+ 1271  kubectl describe svc nginxash
+ 1272  kubectl get svc nginxash
+ 1273  kubectl delete ngtempsvc.yaml 
+ 1274  kubectl delete svc -f ngtempsvc.yaml 
+ 1275  kubectl get svc
+ 1276  kubectl delete svc nginxash
+ 1277  vim nginxash.yaml 
+ 1278  kubectl apply -f nginxash.yaml 
+ 1279  ls
+ 1280  vim ngtempsvc.yaml 
+ 1281  kubectl create -f ngtempsvc.yaml 
+ 1282  kubectl get svc
+ 1283  kubect describe svc nginashish
+ 1284  kubectl describe svc nginxashish
+ 1285  kubectl describe svc nginxash
+ 1286  cd proj
+ 1287  ls
+ 1288  ls -trh
+ 1289  ls -tlhr
+ 1290  vim ngtempsvc.yaml 
+ 1291  kubectl get svc
+ 1292  kubectl delete svc nginxash 
+ 1293  kubectl create -f ngtempsvc.yaml 
+ 1294  kubectl describe svc nginxash
+ 1295  kubecet delete nginxash
+ 1296  kubecet delete svc nginxash
+ 1297  kubectl delete svc nginxash
+ 1298  vim ngtempsvc.yaml 
+ 1299  kubectl create -f ngtempsvc.yaml 
+ 1300  kubectl describe svc nginxash
+ 1301  kubectl get svc
+ 1302  ip r l
+ 1303  curl -k https://10.98.226.22
+ 1304  kubectl get pods
+ 1305  kubect get rs
+ 1306  kubectl get rs
+ 1307  kubectl get pods
+ 1308  kubectl expose pod ngexp --type=NodePort --port=80 --name=nginx-exp1 --dry-run=client -o yaml
+ 1309  kubectl create pod ngexp --image=nginx
+ 1310  kubectl create ngexp --image=nginx 
+ 1311  kubectl create pod  ngexp --image=nginx 
+ 1312  kubectl create pod --help
+ 1313  kubectl create pod nginx
+ 1314  kubectl create -f pod nginx --image=nginx
+ 1315  kubectl create -f pod nginx 
+ 1316  kubectl create pods nginx
+ 1317  kubectl create pod nginx
+ 1318  kubectl run pod nginx --image=nginx
+ 1319  kubectl expose pod nginx --type=NodePort --port=80 --name=nginx-exp1 --dry-run=client -o yaml
+ 1320  kubectl get pods
+ 1321  kubect delete deployment nginx-deployment
+ 1322  kubeclt delete deployment nginx-deployment
+ 1323  kubectl delete deployment nginx-deployment
+ 1324  kubectl get pods
+ 1325  kubectl delete deplymment nginx-depashish
+ 1326  kubectl delete deploymment nginx-depashish
+ 1327  kubectl delete deploymment 
+ 1328  kubectl delete deployments.apps nginx-depashish 
+ 1329  kubectl get pods\
+ 1330  kubectl get pods
+ 1331  kubectl delete deployments.apps nginx-deployment
+ 1332  kubect get pods
+ 1333  kubectl get pods
+ 1334  htop
+ 1335  cd proj
+ 1336  ls
+ 1337  vim nginxash.yaml 
+ 1338  vim nginxdep.yaml 
+ 1339  docker ps
+ 1340  cd proj
+ 1341  ls
+ 1342  vim ngtempsvc.yaml 
+ 1343  kubectl get pods
+ 1344  kubectl get pods --all-namespaces
+ 1345  kubectl delete pod pod
+ 1346  kubectl delete ingress-nginx-controller-c4f944d4d-w5mn6
+ 1347  kubectl delete svc ingress-nginx-controller-c4f944d4d-w5mn6
+ 1348  vim nginxash.yaml 
+ 1349  vim nginxdep.yaml 
+ 1350  kubectl get deployments.apps 
+ 1351  kubectl create -f nginxdep.yaml 
+ 1352  kubectl get deployments.apps 
+ 1353  vim ngtempsvc.yaml 
+ 1354  kubectl get svc
+ 1355  kubectl delete svc nginxash 
+ 1356  kubectl apply -f ngtempsvc.yaml 
+ 1357  vim ngtempsvc.yaml 
+ 1358  kubectl apply -f ngtempsvc.yaml 
+ 1359  kubectl get svc
+ 1360  kubectl describe svc nginxash | more
+ 1361  kubectl describe svc nginxash --all-namespaces
+ 1362  kubectl describe svc nginxash -A
+ 1363  kubectl describe svc nginxash 
+ 1364  kubectl get rs
+ 1365  kubectl scale --replicas=3 nginx-deployment 
+ 1366  kubectl scale --replicas=3 deployment nginx-deployment 
+ 1367  kubect get rs
+ 1368  kubectl get rs
+ 1369  kubectl describe svc nginxash 
+ 1370  kubect get svc
+ 1371  kubectl get svc
+ 1372  kubectl delete svc nginxash 
+ 1373  vim ngtempsvc.yaml 
+ 1374  kubectl apply -f ngtempsvc.yaml 
+ 1375  kubectl get svc
+ 1376  kubectl get svc watch
+ 1377  kubectl get svc watch -n5
+ 1378  kubectl get svc 
+ 1379  kubectl delete svc nginxash 
+ 1380  vim ngtempsvc.yaml 
+ 1381  kubectl create -f ngtempsvc.yaml 
+ 1382  vim ngtempsvc.yaml 
+ 1383  kubectl create -f ngtempsvc.yaml 
+ 1384  kubectl get svc 
+ 1385  kubectl describe svc nginxash
+ 1386  kubectl get pods
+ 1387  kubectl describe pods nginx-deployment
+ 1388  kubectl describe pods nginx-deployment | more 
+ 1389  docker ps
+ 1390  docker ps | grep nginx
+ 1391  docker ps -a
+ 1392  docker ps -a | grep more
+ 1393  kubectl exec -it nginx-deployment-79ffdc5889-49v2b
+ 1394  kubectl exec -it nginx-deployment-79ffdc5889-49v2b /bin/bash
+ 1395  kubectl get pods
+ 1396  kubectl delete pods nginx
+ 1397  kubectl delete pods nginx-deployment
+ 1398  kubectl delete pods nginx-deployment-79ffdc5889-49v2b 
+ 1399  kubectl get pods
+ 1400  kubectl scale --replicas=1 deployment nginx-deployment 
+ 1401  kubectl get pods
+ 1402  kubectl logs nginx-deployment-79ffdc5889-mv6fv 
+ 1403  docker ps
+ 1404  kubectl logs nginx-deployment-79ffdc5889-mv6fv 
+ 1405  docker container ls
+ 1406  docker container ls | awk -F { "print $2" }
+ 1407  docker container ls | awk -F { print $2 }
+ 1408  docker container ls | awk -F { print $2}
+ 1409  awk -F --help
+ 1410  docker container ls | awk -F '{ print $2 }'
+ 1411  docker container ls | awk -F "" '{ print $2 }'
+ 1412  docker container ls | awk -F " " '{ print $2 }'
+ 1413  docker ps
+ 1414  docker container ls | awk -F " " '{ print $2 }'
+ 1415  docker container ls | awk -F " " '{ print $2 }' | grep nginx
+ 1416  kubectl describe pods nginx-deployment-79ffdc5889-mv6fv 
+ 1417  kubectl delete pods nginx-deployment-79ffdc5889-mv6fv 
+ 1418  vim nginxash.yaml 
+ 1419  kubectl apply -f nginxash.yaml 
+ 1420  kubectl get pods
+ 1421  vim nginxdep.yaml 
+ 1422  kubectl delete deployments.apps nginx-depashish 
+ 1423  kubectl get pods
+ 1424  kubectl delete deployments.apps nginx-deployment 
+ 1425  kubectl get pods
+ 1426  kubectl apply -f nginxdep.yaml 
+ 1427  kubectl get pods
+ 1428  docker ps
+ 1429  vim ngtempsvc.yaml 
+ 1430  ls
+ 1431  vim ngtempsvc.yaml 
+ 1432  vim nginxdep.yaml 
+ 1433  kubectl apply -f nginxdep.yaml 
+ 1434  kubectl delete deployments.apps nginx-deployment 
+ 1435  kubectl apply -f nginxdep.yaml 
+ 1436  kubectl get deployments.apps 
+ 1437  docker ps
+ 1438  kubectl get pods
+ 1439  kubectl get events -n jenkins 
+ 1440  curl http://54.164.201.248:32114
+ 1441  sudo netstat -tulnp | grep ":8080"
+ 1442  sudo netstat -tulnp | grep ":32114"
+ 1443  kubectl delete deployments.apps nginx-deployment 
+ 1444  vim kubeexamp.yaml
+ 1445  nano kubeexamp.yaml
+ 1446  vim kubeexamp.yaml 
+ 1447  kubectl get pods
+ 1448  kubectl apply -f kubeexamp.yaml 
+ 1449  kubectl get pods
+ 1450  vim ngtempsvc.yaml 
+ 1451  kubectl describe deployments.apps hello-world 
+ 1452  kubectl get rs
+ 1453  kubectl expose deployment hello-world --type=LoadBalaner --name=hwservlb
+ 1454  kubectl expose deployment hello-world --type=LoadBalancer --name=hwservlb
+ 1455  kubectl get svc
+ 1456  kubectl expose deployment hello-world --type=LoadBalancer --name=hwservlb --externalIP=54.164.201.248
+ 1457  kubectl expose deployment hello-world --type=LoadBalancer --name=hwservlb --external-ip=54.164.201.248
+ 1458  kubectl delete svc hwservlb 
+ 1459  kubectl expose deployment hello-world --type=LoadBalancer --name=hwservlb --external-ip=54.164.201.248
+ 1460  kubectl get svc
+ 1461  htop
+ 1462  kubectl get pods
+ 1463  kubectl get rc
+ 1464  kubectl get rs
+ 1465  kubectl get deployments.apps hello-world 
+ 1466  kubectl get deployments.apps hello-world -o wide
+ 1467  kubectl get pods
+ 1468  ls -tlhr
+ 1469  cd proj
+ 1470  ls -tlhr
+ 1471  vim pod1.yaml 
+ 1472  vim redis.yaml
+ 1473  kubectl apply -f redis.yaml 
+ 1474  vim redis.yaml
+ 1475  kubectl apply -f redis.yaml 
+ 1476  vim redis.yaml
+ 1477  kubectl apply -f redis.yaml 
+ 1478  vim redis.yaml
+ 1479  kubectl apply -f redis.yaml 
+ 1480  kubectl get pods
+ 1481  kubectl expose pods redis --type="ClusterIP" --port=6379
+ 1482  kubectl get pods
+ 1483  kubectl get deployments
+ 1484  kubectl get svc
+ 1485  ls -tlhr
+ 1486  vim clIP.yaml
+ 1487  cat nginxash.yaml 
+ 1488  vim clIP.yaml
+ 1489  cat clIP.yaml 
+ 1490  vim clIP.yaml
+ 1491  kubectl get pods
+ 1492  kubectl apply -f nginxash.yaml 
+ 1493  kubectl apply clIP.yaml 
+ 1494  kubectl apply -f clIP.yaml 
+ 1495  vim clIP.yaml 
+ 1496  kubectl apply -f clIP.yaml 
+ 1497  vim clIP.yaml 
+ 1498  kubectl apply -f clIP.yaml 
+ 1499  vim clIP.yaml 
+ 1500  kubectl apply -f clIP.yaml 
+ 1501  vim clIP.yaml 
+ 1502  kubectl apply -f clIP.yaml 
+ 1503  vim clIP.yaml 
+ 1504  kubectl apply -f clIP.yaml 
+ 1505  kubectl get pods
+ 1506  kubectl get svc
+ 1507  curl 54.161.120.244:8023
+ 1508  curl 10.101.22.248:8023
+ 1509  cat clIP.yaml 
+ 1510  vim clIP.yaml 
+ 1511  kubectl apply -f clIP.yaml 
+ 1512  vim clIP.yaml 
+ 1513  kubectl apply -f clIP.yaml 
+ 1514  vim clIP.yaml 
+ 1515  kubectl apply -f clIP.yaml 
+ 1516  vim clIP.yaml 
+ 1517  kubectl apply -f clIP.yaml 
+ 1518  vim clIP.yaml 
+ 1519  kubectl apply -f clIP.yaml 
+ 1520  sudo init 0
+ 1521  cd proj
+ 1522  kubectl describe service nginx 
+ 1523  curl -i 10.100.249.135
+ 1524  vim awsk8dmnset.yaml
+ 1525  nano awsk8dmnset.yaml
+ 1526  cat awsk8dmnset.yaml 
+ 1527  kubectl apply -f awsk8dmnset.yaml 
+ 1528  kubectl get daemonsets.apps 
+ 1529  kubectl get daemonsets.apps --all-namespaces | grep aws
+ 1530  kubectl delete svc nginx 
+ 1531  kubectl expose deployment nginx-depashish --type=LoadBalancer --name=nglb --target-port=8080 --port=8080
+ 1532  kubectl describe svc nglb 
+ 1533  curl -i 10.103.62.173
+ 1534  kubectl get svc
+ 1535  nano ccmdmst.yaml
+ 1536  cat ccmdmst.yaml 
+ 1537  kubectl delete svc
+ 1538  kubectl delete svc nglb 
+ 1539  kubectl get pods
+ 1540  kubectl delete deployments.apps nginx-depashish 
+ 1541  kubectl get pods
+ 1542  cat ngdep.yaml 
+ 1543  cat nginxdep.yaml 
+ 1544  cat nginxserv.yaml 
+ 1545  ls -tlhr
+ 1546  cat kubeexamp.yaml 
+ 1547  cat selfnginxpods.yaml 
+ 1548  cat nginxash.yaml 
+ 1549  kubectl apply -f ccmdmst.yaml 
+ 1550  kubectl apply -f nginxash.yaml 
+ 1551  kubectl apply -f clIP.yaml 
+ 1552  kubectl get svc
+ 1553  kubectl describe svc loadbalancer 
+ 1554  kubectl get pods -n kube-system
+ 1555  kubectl get pods -n kube-system -all-namespace | grep kube-controller
+ 1556  kubectl get pods -n kube-system --all-namespace | grep kube-controller
+ 1557  kubectl get pods -n kube-system --all-namespaces | grep kube-controller
+ 1558  kubctl describe pod kube-controller-manager-kubemaster.localdomain -n kube-system
+ 1559  kubectl describe pod kube-controller-manager-kubemaster.localdomain -n kube-system
+ 1560  kubectl describe pod kube-controller-manager-kubemaster.localdomain -n kube-system | more
+ 1561  kubectl describe pod kube-controller-manager-kubemaster.localdomain -n kube-system -o yaml > kubectrlmgr.yaml
+ 1562  kubectl describe pod kube-controller-manager-kubemaster.localdomain -n kube-system --o yaml
+ 1563  kubectl get pod kube-controller-manager-kubemaster.localdomain -n kube-system -o yaml
+ 1564  kubectl get pod kube-controller-manager-kubemaster.localdomain -n kube-system -o yaml > k8ctlmgr.yaml
+ 1565  vim k8ctlmgr.yaml 
+ 1566  sudo vim /etc/kubernetes/controller-manager.conf 
+ 1567  kubectl get svc 
+ 1568  cd proj
+ 1569  cat clIP.yaml 
+ 1570  cat nginxdep.yaml 
+ 1571  kubectl get svc
+ 1572  kubectl delete svc loadbalancer 
+ 1573  vim clIP.yaml 
+ 1574  kubectl apply -f clIP.yaml 
+ 1575  kubectl get svc
+ 1576  kubectl expose deployment nginx-depashish --type-port=8080 --port=8080 --type=LoadBalancer --name=nglb
+ 1577  kubectl expose deployment nginx-depashish --typeport=8080 --port=8080 --type=LoadBalancer --name=nglb
+ 1578  kubectl expose deployment nginx-depashish --target port=8080 --port=8080 --type=LoadBalancer --name=nglb
+ 1579  kubectl expose deployment nginx-depashish --target-port=8080 --port=8080 --type=LoadBalancer --name=nglb
+ 1580  kubectl get svc
+ 1581  watch -n5 kubectl get svc
+ 1582  kubeadm reset
+ 1583  sudo kubeadm reset
+ 1584  cd /etc/
+ 1585  ls
+ 1586  cd kubernetes/
+ 1587  ls -la
+ 1588  cd manifests/
+ 1589  ls -la
+ 1590  cd ../pki
+ 1591  ls -la
+ 1592  cd ..
+ 1593  ls -la
+ 1594  cd ..
+ 1595  cd
+ 1596  sudo kubeadm reset
+ 1597  iptables --help 
+ 1598  iptables --help
+ 1599  iptables --help | grep reset
+ 1600  iptables --help | grep clear
+ 1601  iptables --help | more
+ 1602  iptables -L
+ 1603  sudo su
+ 1604  sudo kubectl get pods
+ 1605  kubectl get pods
+ 1606  crontab -e
+ 1607  sudo init 0
+ 1608  kubectl -n kube-system get cm kubeadm-config -o yaml
+ 1609  history
+ 1610  cat <<EOF | kubectl apply -f -
+ 1611  apiVersion: rbac.authorization.k8s.io/v1
+ 1612  kind: Role
+ 1613  metadata:
+ 1614    namespace: kube-system
+ 1615    name: kubeadm:kubeadm-config
+ 1616  rules:
+ 1617  - apiGroups:
+ 1618    - ""
+ 1619    resourceNames:
+ 1620    - kubeadm-config
+ 1621    resources:
+ 1622    - configmaps
+ 1623    verbs:
+ 1624    - get
+ 1625  EOF
+ 1626  cat <<EOF | kubectl apply -f -
+ 1627  apiVersion: rbac.authorization.k8s.io/v1
+ 1628  kind: RoleBinding
+ 1629  metadata:
+ 1630    namespace: kube-system
+ 1631    name: kubeadm:kubeadm-config
+ 1632  roleRef:
+ 1633    apiGroup: rbac.authorization.k8s.io
+ 1634    kind: Role
+ 1635    name: kubeadm:kubeadm-config
+ 1636  subjects:
+ 1637  - apiGroup: rbac.authorization.k8s.io
+ 1638    kind: Group
+ 1639    name: system:nodes
+ 1640  - apiGroup: rbac.authorization.k8s.io
+ 1641    kind: Group
+ 1642    name: system:bootstrappers:kubeadm:default-node-token
+ 1643  EOF
+ 1644  kubectl -n kube-system get cm kubeadm-config -o yaml
+ 1645  kubelet --version
+ 1646  sudo kubectl create rolebinding -n kube-system --role kube-proxy --group system:bootstrappers:kubeadm:default-node-token kubeadm:kube-proxy-bootstrap
+ 1647  sudo kubeadm reset
+ 1648  sudo apt-get install -y docker-ce=18.06.1ce3-0~ubuntu kubelet=1.12.2-00 kubeadm=1.12.2-00 kubectl=1.12.2-00 --allow-downgrades
+ 1649  apt-cache madison docker-ce
+ 1650  sudo apt-get install -y docker-ce=5:18.09.1~3-0~ubuntu-bionic kubelet=1.12.2-00 kubeadm=1.12.2-00 kubectl=1.12.2-00 --allow-downgrades
+ 1651  sudo apt-get install -y docker-ce=5:18.09.1~3-0~ubuntu-bionic 
+ 1652  sudo apt-get install  docker-ce=5:18.09.1~3-0~ubuntu-bionic 
+ 1653  docker ps
+ 1654  docker --version
+ 1655  lsb_release -a
+ 1656  kubelet -version
+ 1657  kubelet --version
+ 1658  kubectl get pods
+ 1659  cd /etc/kubernetes/
+ 1660  l s-la
+ 1661  ls -la
+ 1662  cd
+ 1663  sudo kubeadm init
+ 1664  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+ 1665  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+ 1666  export KUBECONFIG=/etc/kubernetes/admin.conf
+ 1667  vim ~/.bashrc
+ 1668  source ~/.bashrc
+ 1669  kubectl --version
+ 1670  kubectl -version
+ 1671  kubelet --version
+ 1672  sudo vim k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm/scheme/scheme.go
+ 1673  cd /etc/kubernetes/
+ 1674  ls =la
+ 1675  ls -la
+ 1676  sudo kubeadm config print init-defaults
+ 1677  sudo kubeadm config print join-defaults
+ 1678  kubernetes --version
+ 1679  whereis kubernetes
+ 1680  cd /etc/kubernetes/
+ 1681  ls -la
+ 1682  admin.conf --version
+ 1683  cd
+ 1684  sudo apt-get remove kubelet 
+ 1685  sudo apt-get remove kubeadm
+ 1686  sudo apt-get remove kubectl
+ 1687  docker --version
+ 1688  sudo apt-get remove docker
+ 1689  sudo apt-get remove docker-ce
+ 1690  docker -version
+ 1691  where is docker
+ 1692  whereis docker
+ 1693  sudo apt-get remove docker
+ 1694  sudo apt autoremove
+ 1695  sudo rm -fr /opt/cni/
+ 1696  sudo apt autoremove
+ 1697  sudo vim /etc/network/interfaces 
+ 1698  sudo apt-get update
+ 1699  sudo swapoff -a
+ 1700  sudo vim /etc/fstab 
+ 1701  sudo apt-get install -y docker.io
+ 1702  lsb_release -a
+ 1703  dpkg -l containerd*
+ 1704  sudo apt install containerd
+ 1705  dpkg -l containerd*
+ 1706  sudo apt-get update && apt-get install -y apt-transport-https curl
+ 1707  sudo su
+ 1708  apt-get update && apt-get install -y apt-transport-https curl
+ 1709  sudo su
+ 1710  cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+ 1711  deb http://apt.kubernetes.io/ kubernetes-xenial main
+ 1712  EOF
+ 1713  sudo su
+ 1714  at <<EOF >/etc/apt/sources.list.d/kubernetes.list
+ 1715  > deb http://apt.kubernetes.io/ kubernetes-xenial main
+ 1716  > EOF
+ 1717  cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+ 1718  deb http://apt.kubernetes.io/ kubernetes-xenial main
+ 1719  EOF
+ 1720  sudo apt-get update
+ 1721  sudo apt-get install -y kubelet kubeadm kubectl 
+ 1722  kubelet --version
+ 1723  sudo apt-mark hold kubelet kubeadm kubectl
+ 1724  nano /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+ 1725  vim /etc/systemd/system/kubelet.service.d/10-kubeadm.conf 
+ 1726  vim /etc/systemd/system/
+ 1727  apt-get update && apt-get install -y apt-transport-https curl
+ 1728  sudo chown -R ubuntu:ubuntu /var/
+ 1729  apt-get update && apt-get install -y apt-transport-https curl
+ 1730  sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+ 1731  echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+ 1732  sudo apt-get update
+ 1733  sudo apt-get install -y kubelet kubeadm kubectl
+ 1734  sudo apt-mark hold kubelet kubeadm kubectl
+ 1735  cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf
+ 1736  overlay
+ 1737  br_netfilter
+ 1738  EOF
+ 1739  sudo modprobe overlay
+ 1740  sudo modprobe br_netfilter
+ 1741  # Setup required sysctl params, these persist across reboots.
+ 1742  cat <<EOF | sudo tee /etc/sysctl.d/99-kubernetes-cri.conf
+ 1743  net.bridge.bridge-nf-call-iptables  = 1
+ 1744  net.ipv4.ip_forward                 = 1
+ 1745  net.bridge.bridge-nf-call-ip6tables = 1
+ 1746  EOF
+ 1747  # Apply sysctl params without reboot
+ 1748  sudo sysctl --system
+ 1749  sudo mkdir -p /etc/containerd
+ 1750  containerd config default | sudo tee /etc/containerd/config.toml
+ 1751  sudo systemctl restart containerd
+ 1752  sudo vim  /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+ 1753  kubectl --version
+ 1754  kubecttl get nodes
+ 1755  kubectl get nodes
+ 1756  kubelet --version
+ 1757  sudo fuser -k 10248/tcp
+ 1758  sudo fuser -k 6443/tcp
+ 1759  sudo kubeadm init
+ 1760  sudo chown ubuntu:ubuntu /var/run/docker.sock
+ 1761  docker ps
+ 1762  whereis docker ps
+ 1763  exit
+ 1764  docker ps
+ 1765  ls -tlhr /var/run/docker.sock 
+ 1766  whereis docker
+ 1767  docker --version
+ 1768  sudo systemctl start docker.service
+ 1769  sudo systemctl status docker.service
+ 1770  sudo systemctl stop docker.service
+ 1771  sudo systemctl start docker.service
+ 1772  sudo kubeadm reset
+ 1773  sudo systemctl status docker.service
+ 1774  !
+ 1775  sudo systemctl start docker.service
+ 1776  sudo systemctl unmask docker
+ 1777  sudo systemctl start docker
+ 1778  systemctl status docker.service
+ 1779  cd /usr/bin
+ 1780  ld -lthr
+ 1781  ls -tlhr
+ 1782  ls -tlhr docker*
+ 1783  sudo apt-get remove docker docker-engine docker.io containerd runc
+ 1784  sudo apt-get update
+ 1785  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg     lsb-release
+ 1786  cd
+ 1787  ls -tlhr .gnupg/
+ 1788  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+ 1789    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+ 1790  sudo apt-get update
+ 1791  sudo apt-get install docker-ce docker-ce-cli containerd.io
+ 1792  apt-cache madison docker-ce
+ 1793  sudo apt-get install docker-ce=5:18.09.0~3-0~ubuntu-bionic docker-ce-cli=5:18.09.0~3-0~ubuntu-bionic containerd.io
+ 1794  sudo chown -R /var
+ 1795  sudo chown -R ubuntu:ubuntu /var
+ 1796  sudo apt-get install docker-ce=5:18.09.0~3-0~ubuntu-bionic docker-ce-cli=5:18.09.0~3-0~ubuntu-bionic containerd.io
+ 1797  docker ps
+ 1798  sudo kubeadm init --v=5
+ 1799  kubectl get pods
+ 1800  cd .kube/
+ 1801  ls -la
+ 1802  cd
+ 1803  sudo chown -R ubuntu:ubuntu /etc/kubernetes
+ 1804  kubectl get pods
+ 1805  kubectl get pods --all-namespace
+ 1806  kubectl get pods --all-namespaces
+ 1807  ls
+ 1808  cd proj
+ 1809  l s-la
+ 1810  ls -tlhr
+ 1811  kubectl apply -f nginxash.yaml 
+ 1812  kubectl get pods
+ 1813  kubectl get pods --all-namespaces
+ 1814  kubectl -n kube-system apply -f https://raw.githubusercontent.com/coreos/flannel/bc79dd1505b0c8681ece4de4c0d86c5cd2643275/Documentation/kube-flannel.yml
+ 1815  kubectl get pods --all-namespaces
+ 1816  kubectl describe coredns-78fcd69978-n77kg -n kube-system 
+ 1817  kubectl describe pods coredns-78fcd69978-n77kg -n kube-system 
+ 1818  docker --version
+ 1819  cd
+ 1820  sudo kubeadm reset
+ 1821  ip r l
+ 1822  sudo kubeadm init --apiserver-advertise-address=172.31.46.148 --pod-network-cidr=192.168.0.0/16
+ 1823  history
+ 1824  sudo kubectl get pods --all-namespces
+ 1825  sudo kubectl get pods --all-namespaces
+ 1826  sudo kubectl get pods
+ 1827  sudo init 0
+ 1828  kubectl get nodes
+ 1829  ls
+ 1830  cd /etc/
+ 1831  ls
+ 1832  cd kubernetes/
+ 1833  ls -la
+ 1834  cd
+ 1835  docker ps
+ 1836  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+ 1837  kubectl get nodes
+ 1838  sudo chown -R  ubuntu:ubuntu /etc/kubernetes
+ 1839  kubectl get nodes
+ 1840  kubelet --version
+ 1841  docker --version
+ 1842  kubectl get pods
+ 1843  cd proj
+ 1844  l s-la
+ 1845  ls -la
+ 1846  cat pod1.yaml 
+ 1847  kubectl apply -f pod1.yaml 
+ 1848  vim pod1.yaml 
+ 1849  kubectl apply -f pod1.yaml 
+ 1850  vim pod1.yaml 
+ 1851  kubectl apply -f pod1.yaml 
+ 1852  vim pod1.yaml 
+ 1853  kubectl apply -f pod1.yaml 
+ 1854  vim pod1.yaml 
+ 1855  kubectl apply -f pod1.yaml 
+ 1856  vim pod1.yaml 
+ 1857  kubectl apply -f pod1.yaml 
+ 1858  vim pod1.yaml 
+ 1859  kubectl apply -f pod1.yaml 
+ 1860  vim pod1.yaml 
+ 1861  kubectl apply -f pod1.yaml 
+ 1862  kubectl get pods
+ 1863  kubectl describe pods rss-site 
+ 1864  kubectl get nodes
+ 1865  kubectl -n kube-public get cm cluster-info -o yaml > cluster-info.yaml
+ 1866  cat cluster-info.yaml 
+ 1867  mv cluster-info.yaml ../.
+ 1868  cd
+ 1869  cat cluster-info.yaml 
+ 1870  kubectl -n kube-public delete cm cluster-info
+ 1871  kubectl -n kube-public apply -f cluster-info.yaml
+ 1872  sudo kubeadm token list
+ 1873  sudo kubeadm token list --v=5
+ 1874  cd .kube/
+ 1875  ls -la
+ 1876  date
+ 1877  cd
+ 1878  sudo rm -fr .kube/
+ 1879  mkdir -p $HOME/.kube 
+ 1880  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config   
+ 1881  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+ 1882  cd /etc/
+ 1883  cd kubernetes/
+ 1884  ls
+ 1885  ls -tlhr
+ 1886  cd pki/
+ 1887  ls -la
+ 1888  sudo kubeadm token list
+ 1889  cd
+ 1890  sudo kubeadm token list
+ 1891  cat cluster-info.yaml 
+ 1892  kubectl get validatingwebhookconfiguration
+ 1893  kubectl get validatingwebhookconfiguration --all-namespaces
+ 1894  rbacauth1.yaml
+ 1895  vim rbacauth1.yaml
+ 1896  nano rbacauth1.yaml
+ 1897  kubectl apply -f rbacauth1.yaml 
+ 1898  vim rbacauth1.yaml
+ 1899  kubectl apply -f rbacauth1.yaml 
+ 1900  sudo init 0
+ 1901  kubectl get pods
+ 1902  sudo kubeadm reset
+ 1903  sudo rm -fr /etc/kubernetes
+ 1904  sudo apt-get install -q kubectl=1.19.4-00 kubeadm=1.19.4-00 kubectl=1.19.4-00 kubernetes-cni=1.19.4-00
+ 1905  sudo apt-get install -q kubectl=1.19.4-00 kubeadm=1.19.4-00 kubectl=1.19.4-00 
+ 1906  kubelet version
+ 1907  kubeadm version
+ 1908  sudo vim /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+ 1909  ip r l
+ 1910  sudo kubeadm init --apiserver-advertise-address=172.31.46.148 --pod-network=192.168.0.0/16
+ 1911  sudo kubeadm init --apiserver-advertise-address=172.31.46.148 --pod-network-cidr=192.168.0.0/16 --v=5
+ 1912  sudo chown -R ubuntu:ubuntu /etc/kubernetes
+ 1913  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+ 1914  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+ 1915  cd .kube/
+ 1916  ls -la
+ 1917  kubectl get pods -o wide --all-namespaces
+ 1918  kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.7/calico.yaml 
+ 1919  sudo kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.7/calico.yaml 
+ 1920  cd
+ 1921  sudo kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.7/calico.yaml 
+ 1922  kubectl get pods -o wide --all-namespaces
+ 1923  sudo kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.9/calico.yaml 
+ 1924  kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+ 1925  kubectl get pods -o wide --all-namespaces
+ 1926  kubectl get pods
+ 1927  kubectl get pods --all-namespaces
+ 1928  history
+ 1929  touch kubev119.txt
+ 1930  mv kubev119.txt kubernetes_install_v1_19.txt
+ 1931  vim kubernetes_install_v1_19.txt 
+ 1932  cut -f2- kubernetes_install_v1_19.txt k8_v19_install.txt
+ 1933  cut -f2- kubernetes_install_v1_19.txt > k8_v19_install.txt
+ 1934  vim k8_v19_install.txt 
+ 1935  cp k8_v19_install.txt k8install.txt
+ 1936  awk '{ $1=""; print $0 }' k8install.txt 
+ 1937  vim k8install.txt 
+ 1938  cat k8install.txt 
+ 1939  awk '{ $1=""; print $0 }' k8install.txt 
+ 1940  cat k8install.txt 
+ 1941  awk '{ $1=""; print $0 }' k8install.txt 
+ 1942  kubectl get pods
+ 1943  sudo init 0
+ 1944  sudo iptables -L
+ 1945  sudo iptables -F
+ 1946  sudo iptables -L
+ 1947  ls
+ 1948  cd proj
+ 1949  ls -la
+ 1950  kubectl get pods
+ 1951  kubectl config get-contexts --help
+ 1952  kubectl config get-contexts dev
+ 1953  kubectl config get-contexts jenkins
+ 1954  kubectl get ns
+ 1955  kubectl create ns dev
+ 1956  kubectl config set-context --current-context dev
+ 1957  kubectl config set-context --help
+ 1958  kubectl config set-context --current --namespace=dev
+ 1959  kubectl get ns
+ 1960  kubectl apply -f nginxash.yaml 
+ 1961  kubectl get pods
+ 1962  vim clIP.yaml 
+ 1963  kubetl get svc
+ 1964  kubectl get svc
+ 1965  vim nginxash.yaml 
+ 1966  kubectl get deployments.apps nginx-depashish 
+ 1967  kubectl get deployments.apps nginx-depashish --all-namespaces 
+ 1968  kubectl get deployments.apps nginx-depashish -o wide
+ 1969  kubectl apply - f clIP.yaml 
+ 1970  kubectl apply -f clIP.yaml 
+ 1971  kubectl get svc
+ 1972  kubectl delete -f clIP.yaml 
+ 1973  vim clIP.yaml 
+ 1974  kubectl apply -f clIP.yaml 
+ 1975  vim clIP.yaml 
+ 1976  vim nginxash.yaml 
+ 1977  vim clIP.yaml 
+ 1978  kubectl get svc
+ 1979  whereis kubelet
+ 1980  ls -lhtr /usr/bin/kubelet 
+ 1981  ls -tlhr /usr/local/bin/kubelet 
+ 1982  date
+ 1983  vim /etc/systemd/system/kubelet.service.d/10-kubeadm.conf 
+ 1984  cd/etc/systemd/system/kubelet.service.d
+ 1985  cd /etc/systemd/system/kubelet.service.d
+ 1986  ls
+ 1987  ls -tlhr
+ 1988  cat 10-kubeadm.conf 
+ 1989  sudo su
+ 1990  crontab -e
+ 1991  history
+ 1992  history > kubemasterhistory.txt
