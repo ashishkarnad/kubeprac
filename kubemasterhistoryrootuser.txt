@@ -1,0 +1,81 @@
+    1  ls -lthr /var/run/docker.sock
+    2  sudo chown ubuntu:ubuntu /var/run/docker.sock
+    3  ls -lthr /var/run/docker.sock
+    4  exit
+    5  cd /var/lib/etcd
+    6  ls
+    7  ls -la
+    8  rm -fr member/
+    9  ls
+   10  ls -la
+   11  exit
+   12  cd /var/lib/etcd
+   13  ls -la
+   14  cd member/
+   15  ls -la
+   16  cd snap
+   17  ls -la
+   18  cd ..
+   19  rm -fr member/
+   20  exit
+   21  ls
+   22  ls -la
+   23  systemctl daemon-reload
+   24  exit
+   25  history
+   26  exit
+   27  history
+   28  exit
+   29  ls etcd
+   30  ls kubelet/
+   31  cd kubelet/
+   32  ls 
+   33  ls -la
+   34  cd ..
+   35  rm -fr kubelet
+   36  exit
+   37  cd /work
+   38  cd
+   39  ls
+   40  pwd
+   41  cd /work
+   42  cd work
+   43  exit
+   44  iptables -L
+   45  iptables -D
+   46  iptables -D KUBE-SERVICES
+   47  iptables -D --help
+   48  iptables --help
+   49  iptables -F
+   50  iptables -L
+   51  exit
+   52  apt-get update && apt-get install -y apt-transport-https curl
+   53  exit
+   54  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+   55  exit
+   56  chown -R ubuntu:ubuntu cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+   57  deb http://apt.kubernetes.io/ kubernetes-xenial main
+   58  chown -R ubuntu:ubuntu /etc/apt/
+   59  exit
+   60  ls -tlhr /var/run/dockershim.sock
+   61  sudo chown -R ubuntu:ubuntu /var/run/dockershim.sock
+   62  eixt
+   63  exit
+   64  cat 10-kubeadm.conf 
+   65  vim 10-kubeadm.conf 
+   66  cd ..
+   67  ls -la
+   68  cd kubelet.service.d/
+   69  ls -la
+   70  cd ..
+   71  ls -lthr  kube*
+   72  find / -type -f -name "kubelet.service"
+   73  find / -type f -name "kubelet.service"
+   74  vim /lib/systemd/system/kubelet.service
+   75  vim /var/lib/systemd/deb-systemd-helper-enabled/multi-user.target.wants/kubelet.service
+   76  history
+   77  history > kubemasterhistoryroot.txt
+   78  chown ubuntu:ubuntu kubemasterhistoryroot.txt 
+   79  exit
+   80  history
+   81  history > /home/ubuntu/proj/kubemasterhistoryrootuser.txt
